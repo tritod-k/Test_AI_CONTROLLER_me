@@ -130,3 +130,11 @@ def test_nojekyll_and_readme():
     readme = _read("README.md")
     assert "# K.TRITOD" in readme or "Personal Portfolio" in readme
     assert len(readme) > 200, "README.md is too short"
+
+
+def test_antigravity_live_enhancement():
+    '''12. Live verification badge and back-to-top accessibility link.'''
+    html = _read("index.html")
+    assert 'id="aipc-live-badge"' in html
+    assert 'aria-label="Back to top"' in html
+
