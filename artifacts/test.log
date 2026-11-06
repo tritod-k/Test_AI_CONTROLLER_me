@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0 -- H:\000ProjectCode\AI_Project_Controller\.venv\Scripts\python.exe
+cachedir: .superpowers\validation\portfolio_demo\worktrees\run-5f5d95836cba5f1b\phase-web-01\.pytest_temp_cache
+rootdir: H:\000ProjectCode\AI_Project_Controller
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 11 items
+
+tests\test_website.py::test_html_structure_and_doctype PASSED            [  9%]
+tests\test_website.py::test_viewport_meta_tag PASSED                     [ 18%]
+tests\test_website.py::test_all_required_sections_exist PASSED           [ 27%]
+tests\test_website.py::test_internal_anchor_links PASSED                 [ 36%]
+tests\test_website.py::test_images_exist_and_non_empty PASSED            [ 45%]
+tests\test_website.py::test_images_have_alt_attributes PASSED            [ 54%]
+tests\test_website.py::test_nav_accessibility_attributes PASSED          [ 63%]
+tests\test_website.py::test_github_links_valid PASSED                    [ 72%]
+tests\test_website.py::test_css_responsive_rules PASSED                  [ 81%]
+tests\test_website.py::test_privacy_leak_protection PASSED               [ 90%]
+tests\test_website.py::test_nojekyll_and_readme PASSED                   [100%]
+
+============================= 11 passed in 0.29s ==============================
+

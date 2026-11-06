@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <rect width="600" height="360" fill="#0f172a"/>
+  <text x="30" y="40" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">AI Project Controller (AIPC) Architecture</text>
+  <rect x="30" y="70" width="160" height="120" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="45" y="105" fill="#f8fafc" font-family="system-ui" font-size="13" font-weight="bold">Orchestrator Loop</text>
+  <text x="45" y="130" fill="#94a3b8" font-family="system-ui" font-size="11">Stage Journal</text>
+  <text x="45" y="150" fill="#94a3b8" font-family="system-ui" font-size="11">State Machine</text>
+  <text x="45" y="170" fill="#94a3b8" font-family="system-ui" font-size="11">Recovery Engine</text>
+  <rect x="220" y="70" width="160" height="120" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="235" y="105" fill="#f8fafc" font-family="system-ui" font-size="13" font-weight="bold">Agent Router</text>
+  <text x="235" y="130" fill="#94a3b8" font-family="system-ui" font-size="11">Capabilities Match</text>
+  <text x="235" y="150" fill="#94a3b8" font-family="system-ui" font-size="11">Doctor Qualifications</text>
+  <text x="235" y="170" fill="#94a3b8" font-family="system-ui" font-size="11">Quota Fallback</text>
+  <rect x="410" y="70" width="160" height="120" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="425" y="105" fill="#f8fafc" font-family="system-ui" font-size="13" font-weight="bold">Phase Gate</text>
+  <text x="425" y="130" fill="#94a3b8" font-family="system-ui" font-size="11">Evidence Validation</text>
+  <text x="425" y="150" fill="#94a3b8" font-family="system-ui" font-size="11">Deterministic Review</text>
+  <text x="425" y="170" fill="#94a3b8" font-family="system-ui" font-size="11">Criteria Decision</text>
+  <rect x="30" y="220" width="540" height="110" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+  <text x="45" y="255" fill="#f8fafc" font-family="system-ui" font-size="13" font-weight="bold">Version Manager &amp; Git Checkpoint Layer</text>
+  <text x="45" y="280" fill="#94a3b8" font-family="system-ui" font-size="11">Isolated Git Worktrees • Pre-Phase Checkpoints • Attempt Lineage • Immutable Pass Tag</text>
+  <text x="45" y="305" fill="#38bdf8" font-family="system-ui" font-size="11">Zero destructive resets • Fast-forward promotion on verified PASS</text>
+  <line x1="190" y1="130" x2="220" y2="130" stroke="#64748b" stroke-width="2"/>
+  <line x1="380" y1="130" x2="410" y2="130" stroke="#64748b" stroke-width="2"/>
+</svg>
