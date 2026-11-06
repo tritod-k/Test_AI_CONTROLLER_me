@@ -1,0 +1,3 @@
+# Personal Portfolio Website — K.TRITOD
+
+Initializing via AIPC...
