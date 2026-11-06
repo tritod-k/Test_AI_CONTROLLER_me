@@ -1,0 +1,63 @@
+schema_version: '1.0'
+project:
+  id: k-tritod-portfolio
+  name: "Personal Portfolio Website \u2014 K.TRITOD"
+  workspace: H:\000ProjectCode\Test_AI_CONTROLLER_me
+controller:
+  max_phase_retries: 2
+agents:
+  planner: planner
+  worker: antigravity-manual-worker
+  reviewer: deterministic-reviewer
+phases:
+- id: web-01
+  name: Project Initialization
+  objective: Project structure, PROJECT.yaml, README.md, and base HTML/CSS/JS scaffold
+    created and verified.
+  depends_on: []
+  acceptance_criteria:
+  - id: AC-WEB-01
+    statement: Base scaffold and tests verified
+    required: true
+- id: web-02
+  name: Responsive UI
+  objective: Responsive layout, CSS variables/grid/flexbox, mobile navigation toggle,
+    keyboard accessibility, and typography verified.
+  depends_on:
+  - web-01
+  acceptance_criteria:
+  - id: AC-WEB-02
+    statement: Responsive CSS and navigation verified
+    required: true
+- id: web-03
+  name: Profile and Projects
+  objective: Complete Home, About Me, Engineering Skills, Software & Automation, Projects,
+    Contact, and GitHub sections with custom SVG assets and zero confidential/personal-photo/email
+    leaks.
+  depends_on:
+  - web-02
+  acceptance_criteria:
+  - id: AC-WEB-03
+    statement: All sections and SVG assets verified
+    required: true
+- id: web-04
+  name: Functional and Accessibility Tests
+  objective: Automated verification suite in tests/test_website.py validating HTML
+    semantics, accessibility attributes, mobile nav JS, internal/external links, SVG
+    asset existence, and privacy guard.
+  depends_on:
+  - web-03
+  acceptance_criteria:
+  - id: AC-WEB-04
+    statement: Full automated test suite passing
+    required: true
+- id: web-05
+  name: GitHub Publication and Final Verification
+  objective: GitHub Actions CI workflow .github/workflows/ci.yml, GitHub Pages .nojekyll
+    compatibility, and final verification documentation completed.
+  depends_on:
+  - web-04
+  acceptance_criteria:
+  - id: AC-WEB-05
+    statement: GitHub CI workflow and publication files verified
+    required: true
